@@ -6,7 +6,7 @@ int main()
   Tank tank(100);
   tank.addLiquid(10);
   std::cout << "Tank Level: "
-            << "Tank.getLevel()
+            << tank.getLevel()
             << std::endl;
  
 return 0;
