@@ -1,6 +1,49 @@
 #include <iostream>
+
 #include "Tank.h"
 #include "FillValve.h"
+#include "DrainValve.h"
+
+int main()
+{
+// Create tank with capacity of 100
+Tank tank(100);
+
+// Create valves
+FillValve fillValve(5);
+DrainValve drainValve(2);
+
+// Open fill valve
+fillValve.open();
+
+if (fillValve.isValveOpen())
+{
+tank.addLiquid(fillValve.getFlowRate());
+}
+
+// Open drain valve
+drainValve.open();
+
+if (drainValve.isValveOpen())
+{
+tank.removeLiquid(drainValve.getFlowRate());
+}
+
+std::cout << "Tank Level: "
+<< tank.getLevel()
+<< std::endl;
+
+return 0;
+}
+
+
+
+/*
+#include <iostream>
+#include "Tank.h"
+#include "FillValve.h"
+#include "DrainValve.h"
+
 
 int main()
 {
@@ -23,3 +66,5 @@ int main()
 
 return 0;
 }
+*/
+
