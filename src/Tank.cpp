@@ -2,21 +2,21 @@
  
 Tank::Tank(double cap)
 {
-capacity = cap;
-currentLevel = 0;
+  capacity = cap;
+  currentLevel = 0;
 }
  
 void Tank::addLiquid(double amount)
 {
-currentLevel += amount;
+  currentLevel += amount;
 }
  
 void Tank::removeLiquid(double amount)
 {
-currentLevel -= amount;
+  currentLevel -= amount;
 }
  
 double Tank::getLevel() const
 {
-return currentLevel;
+  return currentLevel;
 }
