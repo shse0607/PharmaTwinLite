@@ -1,3 +1,21 @@
+Updated as of 25SEP2026
+Tank Done
+Tank Protection Done
+ 
+FillValve Done
+ 
+DrainValve Done
+ 
+OverflowAlarm Working on it now
+ 
+LevelSensor
+ 
+Validation Suite
+ 
+Graphics (Godot)
+
+
+24SEP2026
 PharmaTwin Lite Design
 Components
 Tank
