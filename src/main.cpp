@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Tank.h"
- 
+
 int main()
 {
   Tank tank(100);
@@ -10,6 +10,6 @@ int main()
   std::cout << "Tank Level: "
             << tank.getLevel()
             << std::endl;
- 
+
 return 0;
 }
